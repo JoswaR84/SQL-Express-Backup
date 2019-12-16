@@ -38,3 +38,4 @@ foreach ($DBName in $DBArray) {
 }
 
 Get-ChildItem $FilePath | Where-Object { $_.LastWriteTime -lt $DatetoDelete } | Remove-Item
+
